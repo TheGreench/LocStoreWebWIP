@@ -1,0 +1,95 @@
+body, body[data-style="clair"] {
+  --background: white;
+  --color: black;
+
+  --table-border: 1px solid black;
+
+  --th-background: blue;
+  --th-color: white;
+
+  --td-positive-background: inherit;
+  --td-positive-even-background: #f2f2f2;
+  --td-negative-background: #FF555533;
+  --td-negative-even-background: #CC000033;
+
+  --span1-color: #fd0909;
+}
+
+body[data-style="dark"] {
+  --background: rgb(32, 32, 32);
+  --color: white;
+
+  --table-border: 1px solid white;
+
+  --th-background: blue;
+  --th-color: white;
+
+  --td-positive-background: inherit;
+  --td-positive-even-background: #202020;
+  --td-negative-background: #CC000055;
+  --td-negative-even-background: #FF333355;
+  
+  --span1-color: #f0e002;
+}
+
+
+h1, h2, h3, footer {
+  font-family: 'Varela Round', sans-serif;
+}
+#title {
+  text-align: center;
+}
+
+body {
+  background: var(--background);
+  color: var(--color);
+  font-family: 'Courier New', Courier, monospace;
+}
+.AccountSpanValues {
+  color: var(--span1-color);
+  font-weight: bold;
+}
+
+#bankList {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+}
+#bankList > * {
+  margin-right: 5px;
+}
+.statement {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+table, td {
+  font-family: 'Courier New', Courier, monospace;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  border: var(--table-border);
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--th-background);
+  color: var(--th-color);
+  padding: 5px;
+}
+
+tr {
+  background-color: var(--td-positive-background);
+}
+
+tr.negative td[name="balance"] {
+  color: red;
+}
+tr.negative {
+  background-color: var(--td-negative-background);
+}
+
+
+footer {
+  text-align: center;
+}
