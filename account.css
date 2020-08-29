@@ -90,6 +90,14 @@ tr.negative {
 }
 
 
+input[type="radio"] {
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+
 footer {
   text-align: center;
 }
