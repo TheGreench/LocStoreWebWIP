@@ -14,6 +14,7 @@ body, body[data-style="clair"] {
 
   --span1-color: #fd0909;
   --background-footer: #646464;
+  --color-rad: #fd0909;
 }
 
 body[data-style="dark"] {
@@ -32,6 +33,7 @@ body[data-style="dark"] {
   
   --span1-color: #f0e002;
   --background-footer: #4b4949;
+  --color-rad: #f0e002;
 }
 
 
@@ -102,6 +104,10 @@ input[type="radio"] {
 }
 input[type="checkbox"] {
   cursor: pointer;
+}
+
+#radStyle:hover {
+  color: var(--color-rad);
 }
 
 
