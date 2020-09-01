@@ -8,7 +8,7 @@
         <script type="module" src="./account.js"></script>
 </head>
 <body>
-        <h1 id="title">Community Shop Account Information | <span id="name"  class="AccountSpanValues"></span>:<span id="accountId" class="AccountSpanValues"></span></h1>
+        <h1 id="title">Community Shop Account Information | <span id="name" class="AccountSpanValues"></span>:<span id="accountId" class="AccountSpanValues"></span></h1>
         <h3 id="info">Bank</h3>
         <div id="bankList">
                 <span>Gem Fragments : </span><span name="gemFragments" class="AccountSpanValues"></span>
@@ -46,8 +46,12 @@
 
         <h2>Options</h2>
         <p>Change stylesheet :</p>
-        <input type="radio" name="radioStyle" value="clair" checked>clair</input>
-        <input type="radio" name="radioStyle" value="dark">dark</input>
+        <input type="radio" name="radioStyle" value="clair" id="rad1" checked>
+                <label for="rad1" style="cursor: pointer;">clair</label>
+        </input>
+        <input type="radio" name="radioStyle" value="dark" id="rad2">
+                <label for="rad2" style="cursor: pointer;">dark</label>
+        </input>
         <br/>
         Low data consumption mode :
         <input type="checkbox" id="lowDataCheck"></input>
