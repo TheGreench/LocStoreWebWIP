@@ -532,8 +532,12 @@
 
         <h2>Options</h2>
         <p>Change stylesheet :</p>
-        <input type="radio" name="radioStyle" value="clair" checked>clair</input>
-        <input type="radio" name="radioStyle" value="dark">dark</input>
+        <input type="radio" name="radioStyle" value="clair" id="rad1" checked>
+                <label for="rad1" style="cursor: pointer;">clair</label>
+        </input>
+        <input type="radio" name="radioStyle" value="dark" id="rad2">
+                <label for="rad2" style="cursor: pointer;">dark</label>
+        </input>
         <br/>
         Low data consumption mode :
         <input type="checkbox" id="lowDataCheck"></input>
