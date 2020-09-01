@@ -13,6 +13,7 @@ body, body[data-style="clair"] {
   --td-negative-even-background: #CC000033;
 
   --span1-color: #fd0909;
+  --background-footer: #646464;
 }
 
 body[data-style="dark"] {
@@ -30,6 +31,7 @@ body[data-style="dark"] {
   --td-negative-even-background: #FF333355;
   
   --span1-color: #f0e002;
+  --background-footer: #4b4949;
 }
 
 
@@ -105,4 +107,8 @@ input[type="checkbox"] {
 
 footer {
   text-align: center;
+  padding: 60px;
+  background: var(--background-footer);
+  clear: both;
+  margin-top: 50px;
 }
